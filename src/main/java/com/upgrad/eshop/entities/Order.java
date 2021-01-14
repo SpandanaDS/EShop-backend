@@ -17,6 +17,7 @@ public class Order {
     @ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     @JoinColumn(name = "id")
     @JsonBackReference
+    @Column(name="user_id")
     private User user;
 
     @OneToOne

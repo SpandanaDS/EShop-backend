@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
-    public Optional<Order> findById(int id);
-    public Optional<Order> findByProduct(String product);
+    public Order findById(int id);
+    public Order findByProduct(String product);
 }
